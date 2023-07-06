@@ -7,29 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="wrapper">
-        <header>
-            <div class="logo">drone.series</div>
-            <img src="./assets/menu.svg" alt="hamburger menu icon">
 
-            <nav>
-                <img src="./assets/exit.svg" alt="exit icon">
-                <ul>
-                    <li>Home</li>
-                    <li>Races</li>
-                    <li>Register</li>
-                    <li>FAQ</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+        <div class="top-bg-container">
+            <div class="light-streaks"></div>
+            <div class="blue-col"></div>
+        </div>
+
+        <main>
+            <header>
+                <a href="#"><span>drone</span>.series</a>
+                <img src="./assets/menu.svg" alt="hamburger menu icon">
+    
+                <nav>
+                    <img src="./assets/exit.svg" alt="exit icon">
+                    <ul>
+                        <li>Home</li>
+                        <li>Races</li>
+                        <li>Register</li>
+                        <li>FAQ</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>  
+            </header>
+
             <div class="hero">
-                <h1 class="hero_title">DRONE RACING GONE WILD</h1>
-                <h2 class="hero_intro">Register now for the ultimate drone racing event. 5 mile courses and over $10 million in prize money!</h2>
-                <img width="250px" src="./assets/drone.png" alt="picture of a drone" class="drone_pic">
+                <div class="hero_type">
+                    <h1 class="hero_title">DRONE RACING GONE WILD</h1>
+                    <p class="hero_intro">Register now for the ultimate drone racing event. 5 mile courses and over $10 million in prize money!</p>
+                </div>
+                <div class="drone_pics">
+                    <img width="250px" src="./assets/drone.png" alt="picture of a drone" class="drone_pic">
+                    <img width="250px" src="./assets/blur.png" alt="picture of a drone" class="blur_pic">
+
+                </div>
             </div>
-            
-        </header>
+        </main>
 
         <div class="content">
             <h1 class="quote">“the stadium is simply unreal. scrimba hall will make this the best drone racing event ever, period.”</h1>
@@ -37,45 +50,51 @@
         </div>
 
         <div class="gallery">
+
             <div class="gallery_details">
-                <h1 class="gallery_title">
-                    last year’s footage
-                </h1>
-                <p class="gallery_para">With over 5,000 participants, 2020 featured some of the most amazing drone races from the most competitive field ever seen.
-                  </p>
+                <h1 class="gallery_title">last year’s footage</h1>
+                <p class="gallery_para">With over 5,000 participants, 2020 featured some of the most amazing drone races from the most competitive field ever seen.</p>
+
                 <p class="gallery_para">  in 2021, we’re about to double the excitement with 10,000 race participants and 100,000 fans!</p>
             </div>
 
-              <div class="picture_gallery">
+            <div class="picture_gallery">
                 <img src="./assets/footage-1.jpg" alt="" class="pic">
                 <img src="./assets/footage-2.jpg" alt="" class="pic">
                 <img src="./assets/footage-3.jpg" alt="" class="pic">
                 <img src="./assets/footage-4.jpg" alt="" class="pic">
                 <img src="./assets/footage-5.jpg" alt="" class="pic">
-              </div>
+            </div>
+
         </div>
 
-        <div class="form">
-            <form action="">
-                <h1 class="form_title">
-                    register for the event!
-                </h1>
+        <form>
+            <div class="left_col">
+                <h1 class="form_title">register for the event!</h1>
+
                 <div class="input">
-                    <div class="lable"><label for="name">Name</label></div>
-                    <div class="input_name"><input type="text" name="name" id="name"></div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
                 </div>
+    
                 <div class="input">
-                    <div class="lable"><label for="email">Email</label></div>
-                    <div class="input_name"><input type="email" name="email" id="email"></div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
                 </div>
+    
                 <button>register now!</button>
-            </form>
-        </div>
+            </div>
 
-        <footer>
-            <p>1-555-555-3298</p>
-            <p>some@email.com</p>
-        </footer>
+            <div class="right_col">
+                <ul>
+                    <li>6461-448-12484</li>
+                    <li>234asdaas@email.com</li>
+                </ul>
+            </div>
+            
+        </form>
+
+
 
     </div>
 

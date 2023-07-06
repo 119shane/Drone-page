@@ -72,9 +72,9 @@ header {
 }
 
 .logo {
-    padding: .3em;
+    padding: .2em .4em;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.6rem;
     background: #000;
     text-transform: uppercase;
     font-family: 'Bebas Neue', sans-serif;
@@ -98,7 +98,6 @@ header {
 /* nav */
 
 nav {
-    /* display: none; */
     height: 100vh;
     width: 60%;
     max-width: 450px;
@@ -107,11 +106,15 @@ nav {
     right: 0;
     background: #363B4E;
     color: #fff;
+    z-index: 2;
+    text-align: right;
+    transform: translateX(100%);
+    transition: 300ms transform;
 }
 
 .exit {
     width: 2em;
-    margin: 1em;
+    margin: 2em;
     cursor: pointer;
     transition: 400ms;
 }
@@ -137,6 +140,11 @@ ul li a:hover {
 
 /* main hero */
 
+.hero {
+    margin: 4em 3em;
+    height: 75vh;
+}
+
 .hero_title {
     width: 80%;
     margin: 1em auto 0;
@@ -152,14 +160,39 @@ ul li a:hover {
     text-align: left;
 }
 
-.drone_pic {
-    display: block;
-    max-width: 220px;
-    margin: 3em auto;
+
+.drone_pics {
     position: relative;
+    width: 70%;
+    margin-top: 4em;
 }
 
+.drone_pic,
+.blur_pic {
+    position: absolute;
+}
 
+.blur_pic {
+    top: 1em;
+    opacity: .4;
+    animation: puls 2s alternate-reverse infinite;
+}
+
+.drone_pic {
+    animation: up 2s alternate-reverse infinite;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes puls {
+    from {
+        opacity: 0;
+    }
+}
 
 /* hero
 hero_type

@@ -294,5 +294,20 @@ h2 {
     grid-area: e;
 }
 
+@media only screen and (min-width: 900px) {
+    html {
+        font-size: 20px;
+    }
+    
+    .top-bg-container {
+        width: 80%;
+        grid-template-columns: 60% auto;
+    }
+    
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
 
+}
 

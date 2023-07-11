@@ -308,6 +308,26 @@ h2 {
         width: 80%;
         margin: 0 auto;
     }
+    h1 {
+        font-size: 5rem;
+        width: 80%;
+    }
+    
+    nav ul {
+        transform: translateX(0);
+        width: unset;
+        background: none;
+        display: flex;
+        padding-top: 1em;
+        padding-bottom: 0;
+        position: unset;
+        height: auto;
+    }
+    
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0 1em;
+    }
 
 }
 
